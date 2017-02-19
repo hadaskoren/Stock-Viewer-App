@@ -12,8 +12,7 @@
     "font-awesome": "^4.7.0",
     "highcharts": "^5.0.7",
     "vue": "^2.1.0",
-    "vue-highcharts": "0.0.9",
-    "vuex": "^2.1.2"
+    "vue-highcharts": "0.0.9"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -26,6 +25,7 @@
     "sass-loader": "^6.0.0",
     "vue-loader": "^10.0.0",
     "vue-template-compiler": "^2.1.0",
+    "vuex": "^2.1.2",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"
   }
