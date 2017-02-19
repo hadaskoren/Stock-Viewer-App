@@ -1,0 +1,23 @@
+<div class="center">
+  <nav class="main-nav navbar navbar-light bg-faded">
+    <a class="navbar-brand" href="#">
+      <img class="brand-image" src="../../assets/datorama.png" alt="">
+    </a>
+  </nav>
+
+  <div class="container">
+    <h1>Stock Viewer App</h1>
+    <div class="apiSearch">
+      <input class="form-control" type="text" placeholder="Please Enter Stocks Symbols (seperated by commas)" v-model="stocksInput" @keyup.enter="callAPI()"></input>
+      <button class="btn btn-primary SearchBtn" @click="callAPI()"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+    </div>
+
+    <div>
+        <table-stocks-data></table-stocks-data>
+    </div>
+
+    <div>
+      <chart-year-diff></chart-year-diff>
+    </div>
+  </div>
+</div>

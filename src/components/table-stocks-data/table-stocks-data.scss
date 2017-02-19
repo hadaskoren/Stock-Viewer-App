@@ -1,0 +1,28 @@
+$second-color: #434348;
+
+.dataTable {
+    margin-top: 60px;
+    
+    // border: 2px solid $second-color;
+    th {
+        background: $second-color;
+        color: white;
+    }
+
+    tbody{
+        tr{
+            &:hover {
+                background: #e7f0f9;
+            }
+        }
+    }
+    
+}
+
+.textRed {
+    color: red;
+}
+
+.textGreen {
+    color: green;
+}

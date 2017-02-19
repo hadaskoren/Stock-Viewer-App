@@ -1,0 +1,22 @@
+<div>
+    <table v-show="showData" id="tableData" class="table table-inverse table-striped table-bordered table-hover dataTable">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Previous Close</th>
+                <th>Year Low</th>
+                <th>Year High</th>
+                <th>Change From Year Low</th>
+                <th>Change From Year High</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="stock in stocks">
+                <td v-for="(value,key) in stock" :class="{textRed: value < 0 && (key === 'changeFromYearLow'|| key === 'changeFromYearHigh'), textGreen: value >= 0 && (key === 'changeFromYearLow'||key === 'changeFromYearHigh')}">
+                    {{value}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

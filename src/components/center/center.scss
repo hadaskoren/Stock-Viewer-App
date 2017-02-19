@@ -1,0 +1,33 @@
+$primary-color: rgb(124, 181, 236);
+$second-color: #434348;
+
+h1 {
+    color: $second-color;
+}
+
+.main-nav {
+    background-color: $primary-color;
+}
+
+.brand-image {
+    width: 165px;
+    height: 37px;
+    margin-top: 5px;
+}
+
+a.navbar-brand {
+    padding-top: 0;
+}
+
+.container {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.apiSearch {
+    display: flex;
+    width: 500px;
+    margin-top: 30px;
+}
+
