@@ -1,5 +1,6 @@
+'use strict';
+
 export default {
-    
     computed: {
         stocks() {
             return this.$store.state.stocks;
