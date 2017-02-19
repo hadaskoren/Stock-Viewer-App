@@ -80,7 +80,7 @@ export default {
                             this.showData = false;
                             this.moreThanSix = false;
                         }
-                        toastr.options.timeOut = 1500;
+                        toastr.options.timeOut = 2000;
                         toastr.warning('Stock symbol wasn\'t found, please try again');
                     })
         },
@@ -90,17 +90,18 @@ export default {
          * 
          * */
         checkResult(res) {
+            this.$store.state.stocks = [];
             let stocksResult = res.query.results.quote;
 
             if(stocksResult.length !== undefined) {
-                for(let i = 0; i < stocksResult.length; i++) {
+                for(var i = 0; i < stocksResult.length; i++) {
                     this.updateCurrStocks(stocksResult[i]);
                 }
             } else {
                 this.updateCurrStocks(stocksResult);
             }
         },
-        /*
+         /*
          *
          * This method gets a json object, create a stock object and send to the store to update the stocks.
          * 
@@ -123,5 +124,5 @@ export default {
     components: {
         tableStocksData,
         chartYearDiff
-    }
+    },
 }
