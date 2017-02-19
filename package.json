@@ -11,9 +11,9 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "highcharts": "^5.0.7",
-    "toastr": "^2.1.2",
     "vue": "^2.1.0",
-    "vue-highcharts": "0.0.9"
+    "vue-highcharts": "0.0.9",
+    "vuex": "^2.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

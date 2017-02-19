@@ -4,7 +4,6 @@ import Vuex from 'vuex';
 import {store} from './store/store';
 import Highcharts from 'highcharts';
 import VueHighcharts from 'vue-highcharts';
-import vueToastr from 'vue-toastr';
 
 Vue.use(Vuex);
 Vue.use(VueHighcharts);
